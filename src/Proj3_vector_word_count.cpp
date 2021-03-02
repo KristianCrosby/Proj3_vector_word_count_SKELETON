@@ -1,7 +1,7 @@
 //============================================================================
 // Name        : Proj3_vector_word_count.cpp
-// Author      : 
-// Version     :
+// Author      : Kristian Crosby
+// Version     : 3/2/21
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
 //============================================================================
