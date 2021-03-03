@@ -10,7 +10,9 @@
 using namespace std;
 using namespace constants;
 
-bool has_nothing(fstream &efile);
+bool has_nothing(fstream &efile){
+	return efile.peek() << fstream::traits_type::eof();
+}
 
 /*if you are debugging the file must be in the project parent directory
   in this case Project2 with the .project and .cProject files*
@@ -19,7 +21,7 @@ bool has_nothing(fstream &efile);
 bool openFile(fstream& myfile, const string& myFileName,
 		ios_base::openmode mode){
 	myfile.open(myFileName.c_str(), mode);
-	if (has_nothing(myfile)) {
+	if (has_nothing(myfile)){
 			myfile.close();
 			return false;
 	}
